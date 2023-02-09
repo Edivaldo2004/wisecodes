@@ -110,6 +110,10 @@ body {
     justify-content: center;
  }
 
+ .link-nav{
+   transition: 1s;
+ }
+
  /*Header*/
 
  header {
@@ -139,11 +143,38 @@ body {
     display: flex;
     min-width: 40vw;
     justify-content: space-between;
-
     font-size: 1rem;
   }
+
   #links {
     display: none;
+  }
+
+  .link{
+    position: relative;
+  }
+
+  .link-menu{
+    text-decoration: none;
+  }
+  
+  .link::before{
+    content: "";
+    position: absolute;
+    left: 2;
+    bottom: 8%;
+    width: 65%;
+    height: 2px;
+    background-color: #3A015C;
+    border-radius: 4px;
+    scale: 0 1;
+    transform-origin: right;
+    transition: scale 0.60s;
+  }
+  
+  .link:hover::before{
+    scale: 1;
+    transform-origin: left;
   }
 
 
@@ -151,7 +182,7 @@ body {
 
   nav{
     background-color: #CBCBCB;
-    height: 90vh;
+    height: 92vh;
     display: flex;
     position: relative;
   }
@@ -171,5 +202,328 @@ body {
     font-size: 20px;
     margin-top: 4%; 
   }
+
+  /* Services */
+
+  .services-body{
+    display: flex;
+  }
+
+  .services-container {
+    width: 100%;
+    min-height: 99.9vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#fff7f7;
+}
+
+.card {
+    border-radius: 16px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    background-image: linear-gradient(#9100bd, #4a0558);
+    transition: all .5s;
+  }
+  
+  .card:hover {
+    background-image: linear-gradient(#faf9fc, #fff);
+  }
+  
+
+.card .img {
+    width: 360px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 280px;
+    background-image: url('../img/img-design.jpg');
+    background-size: cover;
+    background-position: center;
+    transition: all .5s;
+    z-index: 2;
+    position: relative;
+    opacity: .8;
+}
+
+
+.card .img span {
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 100;
+    font-style: italic;
+    transition: all .5s;
+}
+
+.card:hover .img {
+    width: 430px;
+    opacity: 1;
+}
+
+.card:hover .img span {
+    font-size: 28px;
+}
+
+.card .content {
+    padding: 0px 20px;
+    height: 0;
+    opacity: 0;
+    transition: all .5s;
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+    transform: translateY(30px);
+}
+
+.card:hover .content {
+    height: 260px;
+    padding: 20px;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.card .content p {
+    margin: 0;
+}
+
+.card .content .title {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.card .content .desc {
+    font-size: 14px;
+    font-weight: 100;
+    opacity: .8;
+    margin-top: 8px;
+}
+
+.card .arrow {
+    padding: 15px;
+    transform: rotate(-180deg);
+    transition: all .5s;
+}
+
+.card:hover .arrow {
+    transform: rotate(0);
+}
+
+.card .arrow span {
+    font-size: 24px;
+}
+
+/* Second Card Services*/
+
+.card2 {
+  border-radius: 16px;
+  box-shadow: rgba(14, 3, 114, 0.35) 10px 5px 15px;
+  cursor: pointer;
+  width: 360px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  background-image: linear-gradient(#9100bd, #4a0558);
+  transition: all .5s;
+}
+
+.card2:hover {
+  background-image: linear-gradient(#faf9fc, #fff);
+}
+
+.card2 .img {
+  width: 360px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 280px;
+  background-image: url('../img/img-designunico.jpg');
+  background-size: cover;
+  background-position: center;
+  transition: all .5s;
+  z-index: 2;
+  position: relative;
+  opacity: .8;
+}
+
+
+.card2 .img span {
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 100;
+  font-style: italic;
+  transition: all .5s;
+  color: #380e74;
+}
+
+.card2:hover .img {
+  width: 430px;
+  opacity: 1;
+}
+
+.card2:hover .img span {
+  font-size: 28px;
+}
+
+.card2 .content {
+  padding: 0px 20px;
+  height: 0;
+  opacity: 0;
+  transition: all .5s;
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+  transform: translateY(30px);
+}
+
+.card2:hover .content {
+  height: 260px;
+  padding: 20px;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.card2 .content p {
+  margin: 0;
+}
+
+.card2 .content .title {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.card2 .content .desc {
+  font-size: 14px;
+  font-weight: 100;
+  opacity: .8;
+  margin-top: 8px;
+}
+
+.card2 .arrow {
+  padding: 15px;
+  transform: rotate(-180deg);
+  transition: all .5s;
+}
+
+.card2:hover .arrow {
+  transform: rotate(0);
+}
+
+.card2 .arrow span {
+  font-size: 24px;
+}
+
+/* There Card Services*/
+
+.card3 {
+  border-radius: 16px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  cursor: pointer;
+  width: 360px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  background-image: linear-gradient(#9100bd, #4a0558);
+  transition: all .5s;
+}
+
+.card3:hover {
+  background-image: linear-gradient(#faf9fc, #fff);
+}
+
+
+.card3 .img {
+  width: 360px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 280px;
+  background-image: url('../img/img-web.jpg');
+  background-size: cover;
+  background-position: center;
+  transition: all .5s;
+  z-index: 2;
+  position: relative;
+  opacity: .8;
+}
+
+
+.card3 .img span {
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: bold;
+  font-style: italic;
+  transition: all .8s;
+  color: #921cd6;
+}
+
+.card3:hover .img {
+  width: 430px;
+  opacity: 1;
+}
+
+.card3:hover .img span {
+  font-size: 28px;
+}
+
+.card3 .content {
+  padding: 0px 20px;
+  height: 0;
+  opacity: 0;
+  transition: all .5s;
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+  transform: translateY(30px);
+}
+
+.card3:hover .content {
+  height: 260px;
+  padding: 20px;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.card3 .content p {
+  margin: 0;
+}
+
+.card3 .content .title {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.card3 .content .desc {
+  font-size: 14px;
+  font-weight: 100;
+  opacity: .8;
+  margin-top: 8px;
+}
+
+.card3 .arrow {
+  padding: 15px;
+  transform: rotate(-180deg);
+  transition: all .5s;
+}
+
+.card3:hover .arrow {
+  transform: rotate(0);
+}
+
+.card3 .arrow span {
+  font-size: 24px;
+}
 
 }
