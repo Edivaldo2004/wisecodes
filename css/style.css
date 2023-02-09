@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@200;300;400;500;600;700;800;900&family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700;9..144,800;9..144,900&display=swap");
+@import url("https://fonts.googleapis.com/css2? family=Montserrat&display=swap");
 
 @media screen and (min-width: 800px) {
 
@@ -88,6 +88,7 @@ body {
 }
     
 .container{
+    font-family: "montserrat";
     background-color: #3A015C;
     color: white;
  }
@@ -108,4 +109,52 @@ body {
     align-items: center;
     justify-content: center;
  }
+
+ /*Header*/
+
+ header {
+    font-family: "Montserrat";
+    display: flex;
+    width: 100%;
+    height: 10vh;
+    color: var(--main-color);
+    gap: 20px;
+    text-align: center;
+    padding: 5px 10px;
+  }
+
+  header h2 {
+    font-weight: 400;
+    padding: 20px 22px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  #menu{
+    display: none;
+  }
+
+  #links2 {
+    display: flex;
+    min-width: 40vw;
+    justify-content: space-between;
+
+    font-size: 1rem;
+  }
+  #links {
+    display: none;
+  }
+
+
+  /*NavBar*/
+
+  nav{
+    background-color: #CBCBCB;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+
 }
