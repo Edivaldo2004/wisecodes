@@ -80,9 +80,32 @@ p,
 span {
     cursor: default;
 }
+
+html,
+body {
+  width: 100%;
+  scroll-behavior: smooth;
+}
     
 .container{
     background-color: #3A015C;
     color: white;
+ }
+
+ main {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+ .seta{
+    position: absolute;
+    height: 18%;
+    bottom: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
  }
 }
