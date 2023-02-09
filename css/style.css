@@ -153,8 +153,23 @@ body {
     background-color: #CBCBCB;
     height: 90vh;
     display: flex;
-    align-items: center;
     position: relative;
+  }
+
+  .navbar-container{
+   margin-left: 25%;
+   margin-top: 12%;
+  }
+
+  .nav-title2{
+   color: #3A015C;
+   font-size: 32px;
+   margin-top: 12%;
+  }
+
+  .nav-text{
+    font-size: 20px;
+    margin-top: 4%; 
   }
 
 }
