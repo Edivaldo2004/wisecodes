@@ -28,13 +28,14 @@ body.dark {
   position: absolute;
   width: 33px;
   height: 34px;
-  background: #4070f4;
+  background: #3a023b;
   border-radius: 50%;
   top: 50%;
   left: 0px;
   transform: translateY(-50%);
   transition: all 0.3s ease-in-out;
 }
+
 .toggle.active::before {
   background-color: #18191a;
   left: calc(100% - 10px - 24px);

@@ -1,7 +1,8 @@
-.body-services{
+.body-contact{
     background: #420168; 
     height: 100vh;
 }
+
 body, input,textarea, a{
     font-family: 'Roboto', sans-serif;
 }
