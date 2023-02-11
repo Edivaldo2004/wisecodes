@@ -81,6 +81,15 @@ span {
     cursor: default;
 }
 
+::-webkit-scrollbar{
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: rgb(143, 9, 196);
+  border-radius: 1px 1px 8px 8px;
+}
+
 html,
 body {
   width: 100%;
@@ -156,6 +165,7 @@ body {
 
   .link-menu{
     text-decoration: none;
+    color: #3A015C;
   }
   
   .link::before{
