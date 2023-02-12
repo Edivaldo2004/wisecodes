@@ -1,0 +1,15 @@
+.services{
+  height: 90vh;
+}
+
+.father{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    flex: 1 1 150px;
+    margin: 5px;
+}

@@ -19,7 +19,7 @@ const toggle = document.querySelector(".toggle");
       toggle.addEventListener("click", () => toggle.classList.toggle("active"))
 
 
-    /* Services */
+    /*  */
 
     var swiper = new Swiper(".slide-content", {
         slidesPerView: 3,
