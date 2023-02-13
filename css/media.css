@@ -1,4 +1,95 @@
 @media screen and (max-width: 800px){
 
+    body.dark {
+        background-color: #18191a;
+      }
+      .toggle {
+        position: fixed;
+        z-index: 1;
+        width: 68px;
+        height: 34px;
+        right: 10px;
+        bottom: 10px;
+        border-radius: 100px;
+        background-color: #fff;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+        padding: 10;
+      }
+      .toggle::before {
+        content: "";
+        position: absolute;
+        width: 32px;
+        height: 32px;
+        background: #3a023b;
+        border-radius: 50%;
+        top: 50%;
+        left: 0px;
+        transform: translateY(-50%);
+        transition: all 0.3s ease-in-out;
+      }
+      
+      .toggle.active::before {
+        background-color: #18191a;
+        left: calc(100% - 10px - 24px);
+       font-family: 'Poppins', sans-serif;
+      }
+      
+      ::-webkit-scrollbar{
+        width: 10px;
+      }
+      
+      ::-webkit-scrollbar-thumb{
+        background-color: rgb(143, 9, 196);
+        border-radius: 1px 1px 8px 8px;
+      }
+
+
+      html,
+body {
+  width: 100%;
+  scroll-behavior: smooth;
+}
+    
+.container{
+    font-family: "montserrat";
+    background-color: #3A015C;
+    color: white;
+ }
+
+ main {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+ .seta{
+    height: 100px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+
+ .link-nav{
+   transition: 1s;
+ }
+
+
+
+
+
+
+  /* Footer */
+  footer{
+    background-color: #3A015C;
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 18px 18px 18px 18px;
+    font-size: 12px;
+  }
     
 }

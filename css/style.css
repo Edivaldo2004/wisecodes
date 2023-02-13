@@ -65,7 +65,7 @@ body {
  }
 
  main {
-    height: 100vh;
+    height: 85vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -73,8 +73,8 @@ body {
   }
 
  .seta{
-    position: absolute;
-    height: 18%;
+    height: 100px;
+    margin: auto;
     bottom: 5px;
     display: flex;
     align-items: center;
@@ -183,5 +183,16 @@ body {
 
   .img-nav{
     height: 100%;
+  }
+
+
+  /* Footer */
+  footer{
+    background-color: #3A015C;
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 18px 18px 18px 18px;
+    font-size: 12px;
   }
 }
