@@ -199,4 +199,15 @@ body {
     padding: 18px 18px 18px 18px;
     font-size: 12px;
   }
+
+   .seta2{
+    height: 60px;
+    margin: auto;
+    margin-top: 2%;
+    bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+
 }
