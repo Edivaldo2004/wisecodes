@@ -41,7 +41,24 @@ main.team section.team .icon {
     width: 64px;
     height: 150px;
 }
-
+main.team section.team .button {
+    border: 1px solid #3A015C;
+    border-radius: 8px;
+    color: #3A015C;
+    display: flex;
+    column-gap: 5px;
+    padding: 5px;
+    align-items: center;
+    font-weight: 300;
+    font-size: 15px;
+    margin-top: 10px;
+    width: 250px;
+    transition: 1s;  
+}
+main.team section.team .git {
+    width: 40px;
+    height: 40px;
+}
 main.team section.team img {
     width: 100%;
 }
