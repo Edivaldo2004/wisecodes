@@ -1,18 +1,23 @@
 .title-team{
-    background-color: #3A015C;
     color: white;
-    padding: 10px 10px 10px 10px;
-    text-align: center;
+    font-size: 25px;
+
 }
 
 main.team {
     display: flex;
+    flex-direction: column;
     padding: 32px;
-    height: 93vh;
-    gap: 200px;
+    height: 110vh;
+    gap: 50px;
     background-color: #3A015C;
 }
+.equipe{
+    display: flex;
+    flex-direction: row;
+    column-gap: 50px;
 
+}
 main.team section.team {
     display: flex;
     flex-direction: column;
