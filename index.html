@@ -6,13 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="img/Ativo 115000.png" type="image/png">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/contact.css" />
     <link rel="stylesheet" href="css/services.css" />
     <link rel="stylesheet" href="css/equipe.css" />
     <link rel="stylesheet" href="css/media.css" />
-    
+    <link rel="stylesheet" href="css/footer.css" />
+
     <title>Wise Codes Pro</title>
 </head>
 <body>
@@ -116,10 +118,10 @@
 
      <!-- Equipe -->
     
-
+     <a name="equipe"></a>
         <main class="team">
             <div class="title-team">
-                <h2>Equipe<a name="equipe"></a></h2>
+                <h2>Equipe</a></h2>
             </div>
         
             <div class="equipe">
@@ -144,9 +146,9 @@
             </section>
         </div>
         </main>
-
+        
+<a name="contact"></a>
      <!-- Contact -->
-     <a name="contact"></a>
      <div class="body-contact">
      <section id="section-wrapper">
         <div class="box-wrapper">
@@ -165,23 +167,23 @@
                 </ul>
             </div>
             <div class="form-wrap">
-                <form action="#" method="POST">
+                <form action="https://formsubmit.co/andredochute@gmail.com" method="POST">
                     <h2 class="form-title">Mande nos uma mensagem</h2>
                     <div class="form-fields">
                         <div class="form-group">
-                            <input type="text" class="fname" placeholder="Nome Completo">
+                            <input type="text" class="fname" name="Name" placeholder="Nome Completo" required>
                         </div>
                         <div class="form-group">
-                            <input type="text" class="lname" placeholder="Empresa">
+                            <input type="text" class="lname" name="Empresa:" placeholder="Empresa" required>
                         </div>
                         <div class="form-group">
-                            <input type="email" class="email" placeholder="Email">
+                            <input type="email" class="email"name="Email" placeholder="Email" required>
                         </div>
                         <div class="form-group">
-                            <input type="number" class="phone" placeholder="Número">
+                            <input type="number" class="phone" name="Numero" placeholder="Número" required>
                         </div>
                         <div class="form-group">
-                            <textarea name="message" id="" placeholder="Mensagem / Proposta / Trabalho"></textarea>
+                            <textarea name="message" id="" name="Mensagem" placeholder="Mensagem / Proposta / Trabalho" required></textarea>
                         </div>
                     </div>
                     <input type="submit" value="Send Message" class="submit-button">
@@ -192,13 +194,59 @@
 </div>
 <!-- Fim Contact-->
 
-    <footer>
+    
+<!-- Footer -->
 
-     <h2 class="footer-h2">@2023 Todos os direitos reservados - wisecodespro</h2>
+<footer class="footer-distributed">
 
-     <a href="#services"><img src="img/seta2.png" class="seta2" /></a>
+    <div class="footer-left">
+        <h3>Wise<span>Codes</span></h3>
 
-    </footer>
+        <p class="footer-links">
+            <a href="#nav-seta">Inicio</a>
+            |
+            <a href="#services">Serviços</a>
+            |
+            <a href="#equipe">Equipe</a>
+            |
+            <a href="#contact">Contatos</a>
+        </p>
+
+        <p class="footer-company-name">Copyright ©2023 <strong>WiseCodesPro</strong> All rights reserved</p>
+    </div>
+
+    <div class="footer-center">
+        <div>
+            <i class="fa fa-map-marker"></i>
+            <p><span>Mato Grosso do Sul</span>
+                Nova Andradina</p>
+        </div>
+
+        <div>
+            <i class="fa fa-phone"></i>
+            <p>+55 6799121-9802</p>
+        </div>
+        <div>
+            <i class="fa fa-envelope"></i>
+            <p><a href="mailto:sagar00001.co@gmail.com">wisecodespro@gmail.com</a></p>
+        </div>
+    </div>
+    <div class="footer-right">
+        <p class="footer-company-about">
+            <span>About the company</span>
+            <strong>Wise Codes Pro</strong> is a Youtube channel where you can find more creative CSS Animations
+            and
+            Effects along with
+            HTML, JavaScript and Projects using C/C++.
+        </p>
+        <div class="footer-icons">
+            <a href="https://api.whatsapp.com/send?phone=+556799403991&text=Olá,%20gostaria%20de%20fazer%20um%20or%C3%A7amento"><img src="img/whatsapp.svg" height="19px"> </a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/edivaldo-santos-junior-47a104247"><i class="fa fa-linkedin"></i></a>
+        </div>
+    </div>
+    <a href="#services"><img src="img/seta2.png" class="seta2" /></a>
+</footer>
 
     <script src="js/script.js"></script>
 </body>
