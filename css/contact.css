@@ -149,7 +149,7 @@ body, input,textarea, a{
     padding: 0px 20px;
     margin: 14px 12px;
     border-radius: 25px;
-    box-shadow: inset 8px 8px 8px #cbced1, inset -8px -8px 8px #ffffff;
+    box-shadow: inset 4px 4px 4px #cbced1, inset -4px -4px 4px #ffffff;
 }
 .form-fields .form-group:last-child {
     width: 96%;
